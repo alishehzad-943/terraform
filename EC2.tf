@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "EC2" {
   ami           = "ami-09a9858973b288bdd" 
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   count         = 2
 
   tags = {
